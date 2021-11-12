@@ -21,6 +21,21 @@ a {
   }
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.separator { 
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0; 
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -30,7 +45,7 @@ h6 {
   font-family: "Publico Headline", Arial, sans-serif;
   font-weight: 600;
   line-height: 1.1em;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .container {
@@ -43,6 +58,20 @@ h6 {
   background-color: $body-color;
   width: 100%;
   overflow-x: hidden;
+}
+
+.calculator-wrap {
+  display: flex;
+  align-items: center;
+
+  .calculator-wrap__form-partial {
+    flex: 0 0 60.4464286%;
+    position: relative;
+  }
+
+  .calculator-wrap__result-partial {
+    flex: 0 0 41.3392857143%;
+  }
 }
 
 .scroll-container{
@@ -65,76 +94,6 @@ h6 {
   pointer-events: none;
   background-color: $gray-500;
   border-color: $gray-500;
-}
-
-.btn-primary {
-  min-width: 130px;
-  height: 35px;
-  padding: 7px 15px;
-  border-radius: 4px;
-  background-color: $primary;
-  color: $white;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: 0.38px;
-  text-align: center;
-  text-decoration: none;
-  @extend .d-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-  &:active,
-  &:hover,
-  &:focus {
-    background-position: 100% 0;
-    transition: all 0.3s ease-in-out;
-    color: $white;
-    outline: none;
-    text-decoration: none;
-    @include box-shadow(1px 1px rgba($primary, 0.4));
-  }
-}
-
-.btn-secondary,
-.btn-secondary.dropdown-toggle {
-  min-width: 130px;
-  height: 35px;
-  padding: 7px 15px;
-  border-radius: 4px;
-  border-color: $primary;
-  background: none;
-  color: $gray-800;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: 0.38px;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: none;
-  @extend .d-flex;
-  @extend .align-items-center;
-  @extend .justify-content-center;
-  &:active,
-  &:hover,
-  &:focus {
-    background-position: 100% 0;
-    transition: all 0.3s ease-in-out;
-    color: $white;
-    outline: none;
-    text-decoration: none;
-    background: $primary !important;
-    border-color: $primary;
-    @include box-shadow(1px 1px rgba($primary, 0.4));
-  }
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled):focus {
-    border-color: $primary;
-    @include box-shadow(1px 1px rgba($primary, 0.4));
-  }
 }
 
 .bg-dark {
@@ -177,3 +136,7 @@ h6 {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 
+
+.main-content {
+  padding: 3rem;
+}

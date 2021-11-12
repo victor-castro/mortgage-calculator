@@ -1,0 +1,39 @@
+.calculator-result {
+  background: #FBFBFB;
+  border-radius: 0px 0px 8px 8px;
+  padding: 56px 2rem 47px;
+
+  &__title {
+    font-family: "Graphik", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #2E2F2F;
+    margin-bottom: 1.5rem;
+  }
+
+  &__result-item {
+    margin-bottom: 1rem;
+
+    &__result-label {
+      display: flex;
+      font-size: 1rem;
+      color: #5D5D5D;
+      letter-spacing: 0.023em;
+      margin-bottom: 0.5rem;
+
+      &--large {
+        font-size: 20px;
+      }
+    }
+
+    &__result-value {
+      font-family: "Graphik", sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37px;
+      color: #000000;
+    }
+
+  }
+
+}

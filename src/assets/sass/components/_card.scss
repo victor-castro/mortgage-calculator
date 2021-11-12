@@ -1,0 +1,21 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.09);
+  border-radius: .5rem;
+
+  &__header {
+    padding: 1.5rem 0 1rem;
+    margin: 0 1.5rem;
+    border-bottom: 1px solid #DDDDDD;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &__content {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+}

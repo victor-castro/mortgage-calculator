@@ -1,8 +1,12 @@
 @import "variables.scss";
 @import "colors.scss";
-@import "node_modules/bootstrap/scss/bootstrap";
 @import "fonts.scss";
 @import "icons.scss";
 @import "mixins.scss";
 @import "animation.scss";
 @import "form.scss";
+@import "partials/header";
+@import "components/card";
+@import "components/form-field";
+@import "partials/calculator-result";
+@import "partials/calculator-form";

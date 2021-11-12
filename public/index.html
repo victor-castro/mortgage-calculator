@@ -36,102 +36,105 @@
         </div>
     </header>
     <main class="main-content">
-        <div class="card">
-            <div class="card__header">
-                <h2 class="card__title">Change values to calculate your results</h2>
+        <div class="container">
+            <div class="calculator-wrap">
+                <div class="calculator-wrap__form-partial">
+                    <div class="card">
+                        <div class="card__header"> <span class="card__title">Change values to calculate your results</span>
 
-            </div>
-            <div class="card__content">
-                <form>
-                    <!-- Years of mortgage Input -->
-                    <div class="form-field">
-                        <label class="form-field__label" for="annual_tax_field">Years of mortgage</label>
-                        <div class="form-filed__input">
-                            <div class="form-field_progress">
-                                <div class="form-field_progress__start">1</div>
-                                <input id="years_of_mortage_field" type="range" min="1" max="40" value="30">
-                                <div class="form-field_progress__end">40</div>
-                            </div>
-                            <div class="form-field__input-number">
-                                <input type="number">
+                        </div>
+                        <div class="card__content">
+                            <form>
+                                <!-- Years of mortgage Input -->
+                                <div class="form-field">
+                                    <label class="form-field__label" for="annual_tax_field">Years of mortgage</label>
+                                    <div class="form-field__input">
+                                        <div class="form-field_progress">
+                                            <div class="form-field_progress__start">1</div>
+                                            <input id="years_of_mortage_field" type="range" min="1" max="40" value="30">
+                                            <div class="form-field_progress__end">40</div>
+                                        </div>
+                                        <div class="form-field__input-number">
+                                            <input type="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Years of mortgage Input -->
+                                <!-- Rate of interest Input -->
+                                <div class="form-field">
+                                    <label class="form-field__label" for="rate_of_interest_field">Rate of interest (%)</label>
+                                    <div class="form-field__input">
+                                        <div class="form-field_progress">
+                                            <div class="form-field_progress__start">0.1</div>
+                                            <input id="rate_of_interest_field" type="range" step="0.1" min="1" max="10" value="30">
+                                            <div class="form-field_progress__end">40</div>
+                                        </div>
+                                        <div class="form-field__input-number">
+                                            <input type="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Rate of interest Input -->
+                                <!-- Loan Amount Input -->
+                                <div class="form-field form-filed--error">
+                                    <label class="form-field__label" for="load_amount_field">Loan Amount</label>
+                                    <div class="form-field__input">
+                                        <input id="load_amount_field" type="text">
+                                        <div class="form-field__input__error-message">Mandatory field</div>
+                                    </div>
+                                </div>
+                                <!-- /Loan Amount Input -->
+                                <div class="form-fild-row">
+                                    <!-- Annual Tax Input -->
+                                    <div class="form-field">
+                                        <label class="form-field__label" for="annual_tax_field">Annual Tax</label>
+                                        <div class="form-field__input">
+                                            <input id="annual_tax_field" type="text">
+                                            <div class="form-field__input__error-message">Mandatory field</div>
+                                        </div>
+                                    </div>
+                                    <!-- /Annual Tax Input -->
+                                    <!-- Annual Insurance Input -->
+                                    <div class="form-field">
+                                        <label class="form-field__label" for="annual_insurance_field">Annual Insurance</label>
+                                        <div class="form-field__input">
+                                            <input id="annual_insurance_field" type="text">
+                                            <div class="form-field__input__error-message">Mandatory field</div>
+                                        </div>
+                                    </div>
+                                    <!-- /Annual Insurance Input -->
+                                </div>
+                                <button type="submit" class="button button--full">Calculate</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator-wrap__result-partial">
+                    <div class="calculator-result">
+                        <h3 class="calculator-result__title">Your results</h3>
+
+                        <ul class="calculator-result__result-list">
+                            <li class="calculator-result__result-item"> <span class="calculator-result__result-item__result-label">Principal & Interest</span>
+
+                                <div class="calculator-result__result-item__result-value">$ 1,438.79</div>
+                            </li>
+                            <li class="calculator-result__result-item"> <span class="calculator-result__result-item__result-label">Tax</span>
+
+                                <div class="calculator-result__result-item__result-value">$ 83.33</div>
+                            </li>
+                            <li class="calculator-result__result-item"> <span class="calculator-result__result-item__result-label">Insurance</span>
+
+                                <div class="calculator-result__result-item__result-value">$ 25.00</div>
+                            </li>
+                        </ul>
+                        <hr class="separator">
+                        <div class="calculator-result__total">
+                            <div class="calculator-result__result-item"> <span class="calculator-result__result-item__result-label calculator-result__result-item__result-label--large">Total Monthly Payment</span>
+
+                                <div class="calculator-result__result-item__result-value">$ 1,547.12</div>
                             </div>
                         </div>
                     </div>
-                    <!-- /Years of mortgage Input -->
-                    <!-- Rate of interest Input -->
-                    <div class="form-field">
-                        <label class="form-field__label" for="rate_of_interest_field">Rate of interest (%)</label>
-                        <div class="form-filed__input">
-                            <div class="form-field_progress">
-                                <div class="form-field_progress__start">0.1</div>
-                                <input id="rate_of_interest_field" type="range" step="0.1" min="1" max="10" value="30">
-                                <div class="form-field_progress__end">40</div>
-                            </div>
-                            <div class="form-field__input-number">
-                                <input type="number">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Rate of interest Input -->
-                    <!-- Loan Amount Input -->
-                    <div class="form-field form-filed--error">
-                        <label class="form-field__label" for="load_amount_field">Loan Amount</label>
-                        <div class="form-filed__input">
-                            <input id="load_amount_field" type="text">
-                            <div class="form-filed__input__error-message">Mandatory field</div>
-                        </div>
-                    </div>
-                    <!-- /Loan Amount Input -->
-                    <div class="form-fild-row">
-                        <!-- Annual Tax Input -->
-                        <div class="form-field">
-                            <label class="form-field__label" for="annual_tax_field">Annual Tax</label>
-                            <div class="form-filed__input">
-                                <input id="annual_tax_field" type="text">
-                                <div class="form-filed__input__error-message">Mandatory field</div>
-                            </div>
-                        </div>
-                        <!-- /Annual Tax Input -->
-                        <!-- Annual Insurance Input -->
-                        <div class="form-field">
-                            <label class="form-field__label" for="annual_insurance_field">Annual Insurance</label>
-                            <div class="form-filed__input">
-                                <input id="annual_insurance_field" type="text">
-                                <div class="form-filed__input__error-message">Mandatory field</div>
-                            </div>
-                        </div>
-                        <!-- /Annual Insurance Input -->
-                    </div>
-                    <button type="submit" class="button button--full">Calculate</button>
-                </form>
-            </div>
-        </div>
-        <div class="calculator-result">
-            <h3 class="calculator-result__title">Your results</h3>
-
-            <ul class="calculator-result__result-list">
-                <li class="calculator-result__result-item">
-                    <h4 class="calculator-result__result-item__result-label">Principal & Interest</h4>
-
-                    <div class="calculator-result__result-item__result-value">$ 1,438.79</div>
-                </li>
-                <li class="calculator-result__result-item">
-                    <h4 class="calculator-result__result-item__result-label">Tax</h4>
-
-                    <div class="calculator-result__result-item__result-value">$ 83.33</div>
-                </li>
-                <li class="calculator-result__result-item">
-                    <h4 class="calculator-result__result-item__result-label">Insurance</h4>
-
-                    <div class="calculator-result__result-item__result-value">$ 25.00</div>
-                </li>
-            </ul>
-            <hr class="separator">
-            <div class="calculator-result__total">
-                <div class="calculator-result__result-item">
-                    <h4 class="calculator-result__result-item__result-label calculator-result__result-item__result-label--large">Total Monthly Payment</h4>
-
-                    <div class="calculator-result__result-item__result-value">$ 1,547.12</div>
                 </div>
             </div>
         </div>
@@ -139,7 +142,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/svg4everybody.min.js"></script>
     <script src="./assets/js/svg4everybody.legacy.min.js"></script>

@@ -1,0 +1,90 @@
+.form-field {
+  width: 100%;
+  
+  &__label {
+    display: block;
+    font-family: "Graphik", sans-serif;
+    font-size: 14.4px;
+    margin-bottom: 10px;
+    color: #2E2F2F;
+  }
+
+  &__input {
+    display: flex;
+  }
+
+  input[type=text],
+  input[type=number] {
+    font-family: "Graphik", sans-serif;
+    background-color: #FFFFFF;
+    border: 1px solid #BBBCBC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 1.5rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &__input-number {
+    width: 88px;
+
+    input[type=number] {
+      text-align: center;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.form-field_progress {
+  display: flex;
+  align-items: center;
+
+  &__start,
+  &__end {
+    font-family: "Graphik", sans-serif;
+    font-size: 20px;
+  }
+
+  &__start {
+    width: 26px;
+    margin-right: 1rem;
+  }
+
+  &__end {
+    margin: 0 1rem;
+  }
+
+  input[type=range] {
+    background: #DDDDDD;
+    border-radius: 8px;
+    height: 16px;
+    width: 100%;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 25px;
+      height: 25px;
+      background: #04AA6D;
+      cursor: pointer;
+    }
+    
+    &::-moz-range-thumb {
+      width: 25px;
+      height: 25px;
+      background: #04AA6D;
+      cursor: pointer;
+    }
+  }
+
+}
