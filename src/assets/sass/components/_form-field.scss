@@ -11,6 +11,51 @@
 
   &__input {
     display: flex;
+    flex-direction: column;
+
+    &__error-message {
+      margin-top: 0.5rem;
+      color: var(--error);
+      display: none;
+    }
+
+    &--progress {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .form-field_progress {
+        flex: 1;
+      }
+    }
+
+  }
+
+  &--error {
+    .form-field__input {
+
+      input[type=text] {
+        border: 1px solid var(--error);
+      }
+
+      &__error-message {
+        display: block;
+      }
+    }
+  }
+
+  &__input-number {
+    width: 88px;
+
+    input[type=number] {
+      text-align: center;
+      -moz-appearance: textfield;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
   }
 
   input[type=text],
@@ -26,20 +71,12 @@
     width: 100%;
     font-size: 1rem;
     font-weight: 500;
-  }
+    outline: none;
+    transition: .3s all ease;
 
-  &__input-number {
-    width: 88px;
-
-    input[type=number] {
-      text-align: center;
-      -moz-appearance: textfield;
-
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
+    &:focus {
+      border: 1px solid var(--input-focus);
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.2));
     }
   }
 
